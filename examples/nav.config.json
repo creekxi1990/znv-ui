@@ -1,0 +1,403 @@
+{
+  "开发指南": [
+    {
+      "name": "guide",
+      "path": "/guide",
+      "desc": "介绍"
+    },
+    {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "快速开始"
+    },
+    {
+      "name": "theme",
+      "path": "/theme",
+      "desc": "定制主题"
+    },
+    {
+      "name": "logs",
+      "path": "/logs",
+      "desc": "更新日志"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础",
+      "path": "/component",
+      "icon": "ios-browsers",
+      "items": [
+        {
+          "desc": "Base 基础",
+          "icon": "ios-barcode",
+          "name": "base",
+          "path": "/base"
+        },
+        {
+          "desc": "Color 颜色",
+          "icon": "ios-color-palette",
+          "name": "color",
+          "path": "/color"
+        },
+        {
+          "desc": "Icon 图标",
+          "icon": "ios-leaf",
+          "name": "icon",
+          "path": "/icon"
+        },
+        {
+          "desc": "Button 按钮",
+          "icon": "logo-youtube",
+          "name": "button",
+          "path": "/button"
+        },
+        {
+          "desc": "Directive 指令",
+          "icon": "ios-hand",
+          "name": "directive",
+          "path": "/directive"
+        },
+        {
+          "desc": "Console 控制台",
+          "icon": "ios-bug",
+          "name": "console",
+          "path": "/console"
+        },
+        {
+          "desc": "Transition 过渡",
+          "icon": "ios-fastforward",
+          "name": "transition",
+          "path": "/transition"
+        },
+        {
+          "desc": "Draggable 拖拽",
+          "icon": "ios-move",
+          "name": "sortablejs",
+          "path": "/sortablejs"
+        }
+      ]
+    },
+    {
+      "desc": "布局",
+      "path": "/component",
+      "icon": "ios-bookmarks",
+      "items": [
+        {
+          "desc": "Grid 栅格",
+          "icon": "ios-grid",
+          "name": "grid",
+          "path": "/grid"
+        },
+        {
+          "desc": "ScrollBar 滚动",
+          "icon": "ios-infinite",
+          "name": "scrollbar",
+          "path": "/scrollbar"
+        },
+        {
+          "desc": "BackTop 返回顶部",
+          "icon": "ios-arrow-up",
+          "name": "backtop",
+          "path": "/backtop"
+        },
+        {
+          "desc": "Card 卡片",
+          "icon": "ios-card",
+          "name": "card",
+          "path": "/card"
+        },
+        {
+          "desc": "Collapse 折叠面板",
+          "icon": "ios-albums",
+          "name": "collapse",
+          "path": "/collapse"
+        },
+        {
+          "desc": "Split 分割面板",
+          "icon": "ios-photos",
+          "name": "split",
+          "path": "/split"
+        },
+        {
+          "desc": "Divider 分割线",
+          "icon": "ios-code-working",
+          "name": "divider",
+          "path": "/divider"
+        }
+      ]
+    },
+    {
+      "desc": "导航",
+      "path": "/component",
+      "icon": "ios-navigate",
+      "items": [
+        {
+          "desc": "Menu 导航菜单",
+          "icon": "ios-list-box",
+          "name": "menu",
+          "path": "/menu"
+        },
+        {
+          "desc": "Tabs 标签页",
+          "icon": "ios-more",
+          "name": "tabs",
+          "path": "/tabs"
+        },
+        {
+          "desc": "Dropdown 下拉菜单",
+          "icon": "md-arrow-dropdown",
+          "name": "dropdown",
+          "path": "/dropdown"
+        },
+        {
+          "desc": "Breadcrumb 面包屑",
+          "icon": "ios-apps",
+          "name": "breadcrumb",
+          "path": "/breadcrumb"
+        },
+        {
+          "desc": "Badge 徽标",
+          "icon": "ios-square",
+          "name": "badge",
+          "path": "/badge"
+        },
+        {
+          "desc": "Anchor 锚点",
+          "icon": "ios-attach",
+          "name": "anchor",
+          "path": "/anchor"
+        },
+        {
+          "desc": "Loading 加载",
+          "icon": "ios-hourglass",
+          "name": "loading",
+          "path": "/loading"
+        },
+        {
+          "desc": "LoadingBar 加载进度",
+          "icon": "ios-remove",
+          "name": "loadingbar",
+          "path": "/loadingbar"
+        }
+      ]
+    },
+    {
+      "desc": "表单",
+      "path": "/component",
+      "icon": "ios-paper",
+      "items": [
+        {
+          "desc": "Input 输入框",
+          "icon": "ios-create",
+          "name": "input",
+          "path": "/input"
+        },
+        {
+          "desc": "InputNumber 数字输入",
+          "icon": "ios-calculator",
+          "name": "inputNumber",
+          "path": "/inputNumber"
+        },
+        {
+          "desc": "Radio 单选框",
+          "icon": "ios-radio-button-on",
+          "name": "radio",
+          "path": "/radio"
+        },
+        {
+          "desc": "Checkbox 多选框",
+          "icon": "ios-checkbox-outline",
+          "name": "checkbox",
+          "path": "/checkbox"
+        },
+        {
+          "desc": "Switch 开关",
+          "icon": "ios-switch",
+          "name": "switch",
+          "path": "/switch"
+        },
+        {
+          "desc": "Select 选择器",
+          "icon": "ios-list",
+          "name": "select",
+          "path": "/select"
+        },
+        {
+          "desc": "DatePicker 日期选择器",
+          "icon": "ios-calendar",
+          "name": "datePicker",
+          "path": "/datePicker"
+        },
+        {
+          "desc": "TimePicker 时间选择器",
+          "icon": "ios-timer",
+          "name": "timePicker",
+          "path": "/timePicker"
+        },
+        {
+          "desc": "ColorPicker 颜色选择器",
+          "icon": "ios-color-palette",
+          "name": "colorPicker",
+          "path": "/colorPicker"
+        },
+        {
+          "desc": "Cascader 级联选择",
+          "icon": "ios-git-compare",
+          "name": "cascader",
+          "path": "/cascader"
+        },
+        {
+          "desc": "Rate 评分",
+          "icon": "ios-star",
+          "name": "rate",
+          "path": "/rate"
+        },
+        {
+          "desc": "Slider 滑块组件",
+          "icon": "ios-remove",
+          "name": "slider",
+          "path": "/slider"
+        },
+        {
+          "desc": "upload 上传",
+          "icon": "ios-cloud-upload",
+          "name": "upload",
+          "path": "/upload"
+        },
+        {
+          "desc": "Form 表单",
+          "icon": "ios-clipboard",
+          "name": "form",
+          "path": "/form"
+        }
+      ]
+    },
+    {
+      "desc": "数据",
+      "path": "/component",
+      "icon": "ios-stats",
+      "items": [
+        {
+          "desc": "Table 表格",
+          "icon": "table",
+          "name": "table",
+          "path": "/table"
+        },
+        {
+          "desc": "Page 分页器",
+          "icon": "ios-book",
+          "name": "page",
+          "path": "/page"
+        },
+        {
+          "desc": "Tree 树结构",
+          "icon": "ios-git-network",
+          "name": "tree",
+          "path": "/tree"
+        },
+        {
+          "desc": "Progress 进度条",
+          "icon": "ios-reorder",
+          "name": "progress",
+          "path": "/progress"
+        },
+        {
+          "desc": "Circle 进度环",
+          "icon": "ios-radio-button-off",
+          "name": "circle",
+          "path": "/circle"
+        },
+        {
+          "desc": "Tag 标签",
+          "icon": "ios-pricetag",
+          "name": "tag",
+          "path": "/tag"
+        }
+      ]
+    },
+    {
+      "desc": "视图",
+      "path": "/component",
+      "icon": "ios-eye",
+      "items": [
+        {
+          "desc": "Alert 警告提示",
+          "icon": "ios-information-circle-outline",
+          "name": "alert",
+          "path": "/alert"
+        },
+        {
+          "desc": "Message 提示",
+          "icon": "ios-mail",
+          "name": "message",
+          "path": "/message"
+        },
+        {
+          "desc": "Notice 通知",
+          "icon": "ios-notifications",
+          "name": "notice",
+          "path": "/notice"
+        },
+        {
+          "desc": "MessageBox 弹框",
+          "icon": "md-text",
+          "name": "messageBox",
+          "path": "/messageBox"
+        },
+        {
+          "desc": "Popover 气泡弹框",
+          "icon": "ios-chatbubbles",
+          "name": "popover",
+          "path": "/popover"
+        },
+        {
+          "desc": "Modal 模态框",
+          "icon": "ios-text",
+          "name": "modal",
+          "path": "/modal"
+        },
+        {
+          "desc": "Drawer 抽屉",
+          "icon": "ios-filing",
+          "name": "drawer",
+          "path": "/drawer"
+        },
+        {
+          "desc": "Calendar 日历组件",
+          "icon": "ios-calendar",
+          "name": "calendar",
+          "path": "/calendar"
+        },
+        {
+          "desc": "Carousel 轮播",
+          "icon": "ios-film",
+          "name": "carousel",
+          "path": "/carousel"
+        },
+        {
+          "desc": "Tooltip 提示",
+          "icon": "ios-watch",
+          "name": "tooltip",
+          "path": "/tooltip"
+        },
+        {
+          "desc": "Affix 图钉",
+          "icon": "ios-disc",
+          "name": "affix",
+          "path": "/affix"
+        },
+        {
+          "desc": "Timeline 时间线",
+          "icon": "ios-pulse",
+          "name": "timeline",
+          "path": "/timeline"
+        }
+      ]
+    }
+  ]
+}
