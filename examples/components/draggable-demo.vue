@@ -56,7 +56,7 @@
   }
 </script>
 
-<style scoped lang="stylus">
+<style scoped lang="scss">
   .draggable-wrap {
     border: 1px solid #eeeeee;
     padding: 24px;

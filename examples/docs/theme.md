@@ -16,7 +16,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import ZnvUI from 'znv-ui'
 // - import 'znv-ui/lib/styles/index.css'
-import './theme.styl'
+import './theme.scss'
 
 Vue.use(ZnvUI)
 
@@ -37,7 +37,7 @@ $color-danger = #eb2f96;
 
 $border-base-radius = 5px;
 
-@import '~znv-ui/src/styles/index.styl'
+@import '~znv-ui/src/styles/index.scss'
 ```
 
 完整的变量列表，可直接参考`znv-ui/src/styles/common/variables.styl`进行具体配置

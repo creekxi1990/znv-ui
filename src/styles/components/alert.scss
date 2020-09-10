@@ -1,0 +1,120 @@
+.znv-alert {
+  position: relative;
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: $border-base-radius;
+  color: $color-text-default;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin-bottom: 10px;
+
+  &.znv-alert-with-icon {
+    padding: 8px 48px 8px 38px;
+  }
+
+  &.znv-alert-with-desc {
+    &.znv-alert-with-icon {
+      padding: 8px 16px 8px 69px;
+    }
+
+    .znv-alert-icon {
+      top: 50%;
+      left: 24px;
+      margin-top: -18px;
+
+      .iconfont {
+        font-size: 36px;
+      }
+    }
+
+    .znv-alert-desc {
+      display: block;
+    }
+  }
+}
+
+.znv-alert-success {
+  border: 1px solid $color-success-light3;
+  background-color: $color-success-light6;
+
+  .znv-alert-icon {
+    color: $color-success;
+  }
+}
+
+.znv-alert-info {
+  border: 1px solid $color-primary-light3;
+  background-color: $color-primary-light6;
+
+  .znv-alert-icon {
+    color: $color-primary;
+  }
+}
+
+.znv-alert-warning {
+  border: 1px solid $color-warning-light3;
+  background-color: $color-warning-light6;
+
+  .znv-alert-icon {
+    color: $color-warning;
+  }
+}
+
+.znv-alert-error {
+  border: 1px solid $color-danger-light3;
+  background-color: $color-danger-light6;
+
+  .znv-alert-icon {
+    color: $color-danger;
+  }
+}
+
+.znv-alert-message {
+  font-size: $base-font-size;
+  color: $color-text-primary;
+}
+
+.znv-alert-with-desc .znv-alert-message {
+  display: block;
+  font-size: $header-font-size;
+  margin-bottom: 4px;
+}
+
+.znv-alert-desc {
+  display: none;
+  text-align: justify;
+}
+
+.znv-alert-icon {
+  top: 7px;
+  left: 14px;
+  position: absolute;
+
+  .iconfont {
+    font-size: 18px;
+  }
+}
+
+.znv-alert-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  .icon-ios-close {
+    font-size: 20px;
+    color: $color-text-secondary;
+    transition: color 0.2s ease;
+    position: relative;
+    top: -2px;
+
+    &:hover {
+      color: $color-text-default;
+    }
+  }
+}
+
+.znv-alert-with-banner {
+  border-radius: 0;
+}

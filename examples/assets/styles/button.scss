@@ -1,0 +1,71 @@
+.demo-block {
+  .demo-button {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .znv-button-group + .znv-button-group {
+      margin-left: 8px;
+    }
+  }
+
+  .znv-button + .znv-button {
+    margin-left: 8px;
+  }
+}
+
+.icon-loading {
+  animation: rotating 2s linear infinite;
+}
+
+
+@-webkit-keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+@-moz-keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+@-ms-keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+@-o-keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

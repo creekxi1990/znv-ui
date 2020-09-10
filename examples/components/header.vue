@@ -80,7 +80,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="scss">
   .page-header {
     background-color: #fff;
     border-bottom: 1px solid #eeeeee;
@@ -103,10 +103,10 @@
         font-family: helvetica;
         text-align: center;
         font-size: 40px;
-        margin-left: 30px
+        margin-left: 30px;
         width: 200px;
         height: 100px;
-        background: url("../assets/top_logo.png") no-repeat 0 0
+        background: url("../assets/top_logo.png") no-repeat 0 0;
         background-size: 100% 100%;
       }
       .link {

@@ -66,7 +66,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="scss">
   .demo-block {
     border: solid 1px #ebebeb;
     border-radius: 2px;

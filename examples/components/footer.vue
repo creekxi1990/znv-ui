@@ -10,7 +10,7 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="scss">
   .footer {
     padding: 2rem;
     text-align: center;

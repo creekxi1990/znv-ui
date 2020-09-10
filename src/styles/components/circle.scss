@@ -1,0 +1,15 @@
+.znv-circle {
+  display: inline-block;
+  position: relative;
+}
+
+.znv-circle-inner {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 1;
+}

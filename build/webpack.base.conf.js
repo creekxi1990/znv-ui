@@ -40,8 +40,12 @@ module.exports = {
         include: [resolve('examples'), resolve('src')]
       },
       {
-        test: /\.styl(us)?$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
+        test: /\.(scss|css)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

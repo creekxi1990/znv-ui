@@ -1,0 +1,39 @@
+.znv-rate {
+  height: 20px;
+  line-height: 1;
+  outline: none;
+}
+
+.znv-rate__item {
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.znv-rate__icon, .znv-rate__item {
+  display: inline-block;
+  position: relative;
+}
+
+.znv-rate__icon {
+  font-size: 18px;
+  margin-right: 6px;
+  color: #c0c4cc;
+  transition: 0.3s;
+}
+
+.znv-rate__decimal, .znv-rate__icon .path2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.znv-rate__decimal {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.znv-rate__text {
+  font-size: 14px;
+  vertical-align: middle;
+}

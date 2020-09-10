@@ -3,10 +3,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/styles/color-brewer.css'
-import './assets/styles/index.styl'
+import './assets/styles/index.scss'
 import ZnvUI from '../src/index'
-import '../src/styles/index.styl'
-// import './theme.styl' // 自定义主题色
+import '../src/styles/index.scss'
+// import './theme.scss' // 自定义主题色
 import icon from './icon.config'
 
 import ZnvCollapseTransition from '../src/components/base/collapse-transition'

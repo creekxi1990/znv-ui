@@ -31,14 +31,14 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="scss">
   .side-nav {
     position: fixed;
     top: 80px;
     width: 260px;
     height: calc(100vh - 80px);
     overflow: hidden;
-    padding-top: 20px
+    padding-top: 20px;
     box-sizing: border-box;
     color: #3F536E;
     background-color: #fff;

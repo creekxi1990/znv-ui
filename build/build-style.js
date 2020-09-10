@@ -1,13 +1,13 @@
 'use strict'
 // 单独打包css
 const { src, dest, series, task } = require('gulp')
-const stylus = require('gulp-stylus')
+const stylus = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const cssmin = require('gulp-cssmin')
 
 // 打包默认的
 function compile () {
-  return src('../src/styles/*.styl')
+  return src('../src/styles/*.scss')
     .pipe(stylus())
     .pipe(autoprefixer({
       overrideBrowserslist: ['ie > 9', 'last 2 versions'],
