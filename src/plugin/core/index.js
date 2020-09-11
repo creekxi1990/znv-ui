@@ -1,4 +1,3 @@
-import config from '../../../package.json'
 // 指令
 import clickOutSide from '../../directive/clickoutside'
 import waves from '../../directive/waves'

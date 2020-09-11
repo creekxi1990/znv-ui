@@ -301,6 +301,12 @@
           "path": "/tree"
         },
         {
+          "desc": "TreeOrg 组织树结构",
+          "icon": "ios-git-network",
+          "name": "treeOrg",
+          "path": "/treeOrg"
+        },
+        {
           "desc": "Progress 进度条",
           "icon": "ios-reorder",
           "name": "progress",

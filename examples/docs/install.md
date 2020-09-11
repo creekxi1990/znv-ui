@@ -24,8 +24,6 @@ es6配合使用。并且支持按需引入
 
 ```shell
 npm i znv-ui -S
-# or 
-yarn add znv-ui
 ```
 
 如果您了解node.js、npm安装，并希望配合webpack使用，请阅读下一节：[快速上手](/#/start)。

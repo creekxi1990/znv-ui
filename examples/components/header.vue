@@ -2,7 +2,7 @@
   <header class="page-header">
     <div class="header-container" flex="main:justify">
       <div class="left" style="width: 480px;" flex="main:justify cross:center">
-        <div class="logo"></div>
+        <div class="logo">ZUX</div>
         <znv-select style="width: 220px;" placeholder="查询组件" filterable v-model="current"
                   @on-change="handleComponentChange" clearable>
           <znv-option v-for="item in components" :value="item.value" :key="item.value">{{ item.label }}</znv-option>
@@ -102,11 +102,12 @@
         font-weight: bold;
         font-family: helvetica;
         text-align: center;
-        font-size: 40px;
+        font-size: 60px;
         margin-left: 30px;
         width: 200px;
         height: 100px;
-        background: url("../assets/top_logo.png") no-repeat 0 0;
+        line-height: 100px;
+        /*background: url("../assets/top_logo.png") no-repeat 0 0;*/
         background-size: 100% 100%;
       }
       .link {
