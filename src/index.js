@@ -67,6 +67,7 @@ import Popover from './components/popover'
 import Split from './components/split'
 import Slider from './components/slider'
 import Empty from './components/empty'
+import Range from './components/range'
 // 全局注册的实例不需要放入components下
 import LoadingBar from './components/loadingbar'
 import Message from './components/message'
@@ -83,7 +84,7 @@ const components = [
   Select, Option, OptionGroup, Table, Page, Tree, TreeOrg, Cascade,
   Menu, SubMenu, MenuItem, MenuItemGroup, Upload, DatePicker, TimePicker, ColorPicker,
   Timeline, TimelineItem, Affix, Anchor, AnchorLink, Carousel, CarouselItem, Popover,
-  Empty, Split, Slider
+  Empty, Split, Slider, Range
 ]
 
 const install = function (Vue) {
@@ -177,5 +178,6 @@ export default {
   Empty,
   Popover,
   Split,
-  Slider
+  Slider,
+  Range
 }
