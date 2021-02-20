@@ -181,7 +181,7 @@
       },
       appendToBody: {
         type: Boolean,
-        default: false
+        default: true
       },
       name: {
         type: String

@@ -12,7 +12,7 @@
               @contextmenu.stop.prevent="openMenu(tab,$event)">
         <znv-icon v-if="tab.icon" :name="tab.icon" class="custom-icon"></znv-icon>
         {{ tab.title }}
-        <i v-if="type!=='default'&& closable && !tab.noClose" class='iconfont icon-ios-close'
+        <i v-if="type!=='default'&& closable && !tab.noClose" class='znv-iconfont icon-ios-close'
            @click.prevent.stop="closeSelectedTab(tab)"></i>
       </span>
       </div>

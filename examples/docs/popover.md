@@ -205,7 +205,7 @@
 | disabled     | 是否禁用提示框   | Boolean  |  —   |   false   |
 | width	     | 宽度  |  string/number  | — |   —    |
 | confirm    | 是否开启对话框模式   |  Boolean |  — |  	false     |
-| appendToBody    | 是否将弹层放置于 body 内   | Boolean  |  —   |   false   |
+| appendToBody    | 是否将弹层放置于 body 内   | Boolean  |  —   |   true   |
 | ok-text    | 确定按钮文字   | string  |  —   |   确 定    |
 | cancel-text    | 取消按钮文字 | string  |  —   |   取 消    |
 | popper-class   | 给 Popover 设置 class-name，在使用 transfer appendToBody  | string  |  —   |   —    |

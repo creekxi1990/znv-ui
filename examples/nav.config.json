@@ -204,6 +204,12 @@
           "path": "/inputNumber"
         },
         {
+          "desc": "Range 数字滑动",
+          "icon": "ios-calculator",
+          "name": "range",
+          "path": "/range"
+        },
+        {
           "desc": "Radio 单选框",
           "icon": "ios-radio-button-on",
           "name": "radio",

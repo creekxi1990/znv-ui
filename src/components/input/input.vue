@@ -7,13 +7,13 @@
       <!--清空按钮-->
       <i :class="closeClasses"
          v-if="clearable && currentValue && !disabled" @click="handleClear"></i>
-      <i class="iconfont" :class="['icon-' + icon, prefixCls + '-icon', prefixCls + '-icon-normal']"
+      <i class="znv-iconfont" :class="['icon-' + icon, prefixCls + '-icon', prefixCls + '-icon-normal']"
          v-else-if="icon" @click="handleIconClick"></i>
-      <i class="iconfont icon-ios-search"
+      <i class="znv-iconfont icon-ios-search"
          :class="[prefixCls + '-icon', prefixCls + '-icon-normal', prefixCls + '-search-icon']"
          v-else-if="search" @click="handleSearch"></i>
       <span class="znv-input-suffix" v-else-if="showSuffix">
-        <slot name="suffix"><i class="iconfont" :class="['icon-' + suffix]" v-if="suffix"></i></slot></span>
+        <slot name="suffix"><i class="znv-iconfont" :class="['icon-' + suffix]" v-if="suffix"></i></slot></span>
       <input
           :id="elementId"
           :autocomplete="autocomplete"
@@ -40,7 +40,7 @@
           @input="handleInput"
           @change="handleChange">
       <span class="znv-input-prefix" v-if="showPrefix">
-        <slot name="prefix"><i class="iconfont" :class="['icon-' + prefix]" v-if="prefix"></i></slot>
+        <slot name="prefix"><i class="znv-iconfont" :class="['icon-' + prefix]" v-if="prefix"></i></slot>
       </span>
       <span class="znv-input-word-count" v-if="showWordCount">{{ wordCount }}</span>
     </label>
@@ -321,7 +321,7 @@
         ]
       },
       closeClasses() {
-        return ['iconfont', 'icon-ios-close-circle', prefixCls + '-icon', prefixCls + '-icon-clear', prefixCls + '-icon-normal']
+        return ['znv-iconfont', 'icon-ios-close-circle', prefixCls + '-icon', prefixCls + '-icon-clear', prefixCls + '-icon-normal']
       },
       textareaStyle() {
         return {

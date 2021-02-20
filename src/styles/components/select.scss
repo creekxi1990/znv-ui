@@ -309,7 +309,7 @@
 }
 
 .znv-select-dropdown {
-  width: inherit;
+  //width: inherit;
   max-height: 200px;
   overflow: auto;
   margin: 5px 0;
@@ -388,7 +388,7 @@
   }
 
   &-selected:after {
-    font-family: "iconfont" !important;
+    font-family: "znv-iconfont" !important;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;

@@ -112,7 +112,7 @@
       },
       appendToBody: {
         type: Boolean,
-        default: false
+        default: true
       },
       stopRemoveScroll: {
         type: Boolean
@@ -233,12 +233,12 @@
         this.close()
       },
       ok() {
-        if (this.loading) {
+        /* if (this.loading) {
           this.buttonLoading = true
         } else {
           this.visible = false
           this.$emit('input', false)
-        }
+        } */
         this.$emit('on-ok')
       },
       // 点击遮罩层

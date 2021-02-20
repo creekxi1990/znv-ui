@@ -28,7 +28,7 @@
           <div :class="[prefixCls + '-inner']" v-if="confirm">
             <div :class="[prefixCls + '-body']">
               <div :class="[prefixCls + '-body-message']">
-                <i :class="`iconfont icon-${iconName}`" :style="iconStyles"></i>
+                <i :class="`znv-iconfont icon-${iconName}`" :style="iconStyles"></i>
                 <slot name="title"><span class="message-title">{{ title }}</span></slot>
               </div>
               <div :class="[prefixCls + '-body-buttons']">
@@ -106,7 +106,8 @@
         default: '取消'
       },
       appendToBody: {
-        type: Boolean
+        type: Boolean,
+        default: true
       },
       popperClass: {
         type: String

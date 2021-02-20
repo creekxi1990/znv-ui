@@ -22,7 +22,7 @@ export default {
       const wavesColor = binding.value || 'rgba(0, 0, 0, 0.15)'
       const node = el
       if (node) {
-        node.style.position = 'relative'
+        // node.style.position = 'relative'
         node.style.overflow = 'hidden'
         const rect = node.getBoundingClientRect()
         let ripple = document.createElement('span')

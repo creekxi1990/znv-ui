@@ -6,7 +6,7 @@
       role="link">
       <slot></slot>
     </span>
-    <i v-if="separatorIcon" class="znv-separator icon" :class="['iconfont','icon-'+separatorIcon]"></i>
+    <i v-if="separatorIcon" class="znv-separator icon" :class="['znv-iconfont','icon-'+separatorIcon]"></i>
     <span v-else class="znv-separator" role="presentation">{{separator}}</span>
   </span>
 </template>

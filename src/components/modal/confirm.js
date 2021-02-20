@@ -131,7 +131,7 @@ Modal.newInstance = properties => {
       },
       iconNameCls() {
         return [
-          'iconfont',
+          'znv-iconfont',
           `icon-${this.iconName}`
         ]
       }

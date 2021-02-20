@@ -228,6 +228,11 @@
           prop.o[prop.k] = this.initialValue
         }
       },
+      clearValidate() {
+        this.validateState = ''
+        this.validateMessage = ''
+        this.validateDisabled = false
+      },
       onFieldBlur() {
         this.validate('blur')
       },

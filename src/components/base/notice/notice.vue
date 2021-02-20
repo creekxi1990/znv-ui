@@ -12,7 +12,7 @@
           ></render-cell>
         </div>
         <a class="znv-notice-close" @click="close" v-if="closable">
-          <i class="iconfont icon-ios-close"></i>
+          <i class="znv-iconfont icon-ios-close"></i>
         </a>
       </div>
     </template>
@@ -29,7 +29,7 @@
             ></render-cell>
           </div>
           <a :class="[baseClass + '-close']" @click="close" v-if="closable">
-            <i class="iconfont icon-ios-close"></i>
+            <i class="znv-iconfont icon-ios-close"></i>
           </a>
         </div>
       </div>

@@ -1,6 +1,5 @@
 <template>
   <div
-      v-click-outside="handleClose"
       :class="classes">
     <div
         ref="reference"
@@ -40,6 +39,7 @@
           :data-transfer="appendToBody"
           :transfer="appendToBody"
           :class="dropClasses"
+          v-click-outside="handleClose"
       >
         <transition name="fade-in">
           <div
@@ -206,7 +206,7 @@
       },
       appendToBody: {
         type: Boolean,
-        default: false
+        default: true
       },
       name: {
         type: String,

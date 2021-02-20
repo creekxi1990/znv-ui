@@ -1,6 +1,6 @@
 <template>
   <div
-      :class="[
+          :class="[
       'znv-progress',
       status ? 'progress-' + status : '',
       {
@@ -8,19 +8,19 @@
         'znv-progress-text-inside': textInside,
       }
     ]"
-      role="progressbar"
-      :aria-valuenow="percent"
-      aria-valuemin="0"
-      aria-valuemax="100"
+          role="progressbar"
+          :aria-valuenow="percent"
+          aria-valuemin="0"
+          aria-valuemax="100"
   >
     <div class="znv-progress-bar" :class="{'is-active': active}">
       <div class="znv-progress-bar__outer" :style="barOutStyle">
         <div class="znv-progress-bar__inner" :style="barStyle">
-          <div class="znv-progress-bar__innerText" v-if="showText && textInside">{{percent}}%</div>
+          <div class="znv-progress-bar__innerText" v-if="showText && textInside" :style="{color: textColor, fontSize: progressTextSize + 'px', fontWeight: fontWeight}">{{percent}}%</div>
         </div>
       </div>
     </div>
-    <div class="znv-progress__text" v-if="showText && !textInside" :style="{fontSize: progressTextSize + 'px'}">
+    <div class="znv-progress__text" v-if="showText && !textInside" :style="{fontSize: progressTextSize + 'px', color: textColor, fontWeight: fontWeight, lineHeight: strokeWidth + 'px',position: 'absolute', right: '0px'}">
       <template v-if="!status">{{percent}}%</template>
       <template v-else>
         <slot v-if="status === 'text'"></slot>
@@ -60,22 +60,34 @@
         type: String,
         default: ''
       },
-      radius: String,
-      active: Boolean
+      radius: Number,
+      active: Boolean,
+      textColor: {
+        type: String,
+        default: ''
+      },
+      fontWeight: {
+        type: String,
+        default: 'normal'
+      }
     },
     computed: {
       barOutStyle () {
         return {
           height: this.strokeWidth + 'px',
-          borderRadius: this.radius,
-          backgroundColor: this.bgColor
+          borderRadius: this.radius + 'px',
+          background: this.bgColor
         }
       },
       barStyle () {
         const style = {}
         style.width = this.percent + '%'
-        style.backgroundColor = this.color
-        style.borderRadius = this.radius
+        if (this.color.indexOf('gradient') > -1) {
+          style.background = this.color
+        } else {
+          style.backgroundColor = this.color
+        }
+        style.borderRadius = this.radius + 'px'
         return style
       },
       iconClass () {
@@ -83,7 +95,7 @@
       },
       progressTextSize () {
         let size = 12 + this.strokeWidth * 0.4
-        return size > 16 ? 16 : size
+        return size
       }
     }
   }

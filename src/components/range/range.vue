@@ -1,17 +1,16 @@
 <template>
     <div class="znv-range">
-        <i class="ios-remove" @click="onMinus"></i>
-        <input type="range" class="znv-range_input" :value="valueInt" :min="min" :max="max" :step="step"
-               :style="{'background':`linear-gradient(to right, rgb(0, 251, 255), rgb(0, 176, 255) ${colorLeft}%, rgb(38, 42, 53) ${colorRight}%, rgb(38, 42, 53))`}"
-               @input="onInput"
-        />
-        <i class="ios-add" @click="onPlus"></i>
+        <znv-icon name="ios-remove" @click.native="onMinus"></znv-icon>
+        <znv-slider v-model="valueInt" :min="min" :max="max" :step="step" @on-input="onInput"></znv-slider>
+        <znv-icon name="ios-add" @click.native="onPlus"></znv-icon>
     </div>
 </template>
 
 <script>
+    import ZnvSlider from '../../components/slider'
 export default {
     name: 'ZnvRange',
+    components: { ZnvSlider },
     props: {
         value: Number,
         min: {
@@ -24,20 +23,18 @@ export default {
         },
         step: {
             type: Number,
-            default: 5
+            default: 1
         }
     },
-    computed: {
-        valueInt() {
-            return parseInt(this.value)
-        },
-        colorLeft() {
-            let range = this.max - this.min
-            return Math.floor(this.valueInt / range / 10 * 100)
-        },
-        colorRight() {
-            let range = this.max - this.min
-            return Math.floor(this.valueInt / range * 100)
+    data () {
+        return {
+            valueInt: this.value
+        }
+    },
+    watch: {
+        value(v) {
+            this.valueInt = v
+            this.onInput(v)
         }
     },
     methods: {
@@ -49,7 +46,7 @@ export default {
                 tempVal = this.max
             }
             this.$emit('input', tempVal)
-            this.$emit('change')
+            this.$emit('on-change')
         },
         onMinus() {
              let tempVal = this.valueInt
@@ -59,11 +56,11 @@ export default {
                 tempVal = this.min
             }
             this.$emit('input', tempVal)
-            this.$emit('change')
+            this.$emit('on-change')
         },
-        onInput(e) {
-            this.$emit('input', Math.floor(e.target.value))
-            this.$emit('change')
+        onInput(value) {
+            this.$emit('input', value)
+            this.$emit('on-change')
         }
     }
 }

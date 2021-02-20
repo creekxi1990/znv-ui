@@ -207,7 +207,10 @@
         },
         default: 'bottom-start'
       },
-      appendToBody: Boolean,
+      appendToBody: {
+        type: Boolean,
+        default: true
+      },
       // Use for AutoComplete
       autoComplete: {
         type: Boolean,

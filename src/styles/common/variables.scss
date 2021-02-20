@@ -91,3 +91,7 @@ $default-height: 32px !default;
 $small-height: 28px !default;
 $mini-height: 24px !default;
 $base-line-height: 1.5715 !default;
+
+:export {
+  colorPrimary: $color-primary
+}

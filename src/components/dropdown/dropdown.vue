@@ -51,7 +51,10 @@
         type: Boolean,
         default: false
       },
-      appendToBody: Boolean, // 是否移动至body
+      appendToBody: {
+        type: Boolean,
+        default: true
+      }, // 是否移动至body
       transferClassName: { // 包裹的样式名
         type: String
       },

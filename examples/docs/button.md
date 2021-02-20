@@ -192,7 +192,7 @@
     <div class="demo-button">
        <znv-button-group>
          <znv-button type="primary" icon="ios-arrow-back">上一页</znv-button>
-         <znv-button type="primary">下一页<i class="iconfont icon-ios-arrow-forward"></i></znv-button>
+         <znv-button type="primary">下一页<i class="znv-iconfont icon-ios-arrow-forward"></i></znv-button>
        </znv-button-group>
        <znv-button-group>
          <znv-button type="success" icon="ios-basketball"></znv-button>

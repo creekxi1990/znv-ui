@@ -60,7 +60,7 @@
       },
       appendToBody: {
         type: Boolean,
-        default: false
+        default: true
       },
       theme: {
         validator (value) {

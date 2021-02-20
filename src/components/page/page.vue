@@ -1,7 +1,7 @@
 <template>
   <ul :class="simpleWrapClasses" :style="styles" v-if="simple">
     <li title="上一页" :class="prevClasses" @click="prev">
-      <a><i class="iconfont icon-ios-arrow-back"></i></a>
+      <a><i class="znv-iconfont icon-ios-arrow-back"></i></a>
     </li>
     <li :class="simplePagerClasses" :title="currentPage + '/' + allPages"><label>
       <input
@@ -17,7 +17,7 @@
       {{ allPages }}
     </li>
     <li title="下一页" :class="nextClasses" @click="next">
-      <a><i class="iconfont icon-ios-arrow-forward"></i></a>
+      <a><i class="znv-iconfont icon-ios-arrow-forward"></i></a>
     </li>
   </ul>
   <ul :class="wrapClasses" :style="styles" v-else>
@@ -29,11 +29,11 @@
     <li title="上一页" :class="prevClasses" @click="prev">
       <a>
         <template v-if="prevText !== ''">{{ prevText }}</template>
-        <i v-else class="iconfont icon-ios-arrow-back"></i></a>
+        <i v-else class="znv-iconfont icon-ios-arrow-back"></i></a>
     </li>
     <li title="1" :class="firstPageClasses" @click="changePage(1)"><a>1</a></li>
     <li title="向前5页" v-if="currentPage > 5" :class="[prefixCls + '-item-jump-prev']" @click="fastPrev">
-      <a><i class="iconfont icon-doubleleft"></i></a>
+      <a><i class="znv-iconfont icon-doubleleft"></i></a>
     </li>
     <li :title="currentPage - 3" v-if="currentPage === 5" :class="[prefixCls + '-item']"
         @click="changePage(currentPage - 3)">
@@ -65,7 +65,7 @@
     </li>
     <li title="向后5页" v-if="allPages - currentPage >= 5" :class="[prefixCls + '-item-jump-next']"
         @click="fastNext">
-      <a><i class="iconfont icon-doubleright"></i></a>
+      <a><i class="znv-iconfont icon-doubleright"></i></a>
     </li>
     <li :title="allPages" v-if="allPages > 1" :class="lastPageClasses" @click="changePage(allPages)">
       <a>{{ allPages }}</a>
@@ -73,7 +73,7 @@
     <li title="下一页" :class="nextClasses" @click="next">
       <a>
         <template v-if="nextText !== ''">{{ nextText }}</template>
-        <i v-else class="iconfont icon-ios-arrow-forward"></i></a>
+        <i v-else class="znv-iconfont icon-ios-arrow-forward"></i></a>
     </li>
     <options
       :show-sizer="showSizer"

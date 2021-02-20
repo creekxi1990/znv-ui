@@ -1,5 +1,5 @@
 <template>
-  <i :class="['iconfont','icon-' + name]" :style="style"></i>
+  <i :class="['znv-iconfont','icon-' + name]" :style="style"></i>
 </template>
 
 <script>

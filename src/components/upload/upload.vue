@@ -157,7 +157,6 @@
     computed: {
       classes () {
         return [
-          `${prefixCls}`,
           {
             [`${prefixCls}-select`]: this.type === 'select',
             [`${prefixCls}-drag`]: this.type === 'drag',

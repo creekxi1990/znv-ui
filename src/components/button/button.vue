@@ -18,7 +18,7 @@
   >
     <znv-icon class="button-loading icon-is-rotating"
             :name="loadingIcon?loadingIcon:'loading'" v-if="loading" :style="iconStyles"/>
-    <i :class="['iconfont','icon-'+icon]" v-if="icon && !loading" :style="iconStyles"></i>
+    <i :class="['znv-iconfont','icon-'+icon]" v-if="icon && !loading" :style="iconStyles"></i>
     <span v-if="$slots.default" :style="textStyle"><slot></slot></span>
   </button>
   <button v-else-if="type!=='text'&&animationType==='waves'"
@@ -40,7 +40,7 @@
   >
     <znv-icon class="button-loading icon-is-rotating"
             :name="loadingIcon?loadingIcon:'loading'" v-if="loading" :style="iconStyles"/>
-    <i :class="['iconfont','icon-'+icon]" v-if="icon && !loading" :style="iconStyles"></i>
+    <i :class="['znv-iconfont','icon-'+icon]" v-if="icon && !loading" :style="iconStyles"></i>
     <span v-if="$slots.default" :style="textStyle"><slot></slot></span>
   </button>
   <button v-else
@@ -51,7 +51,7 @@
           :class="['znv-button--' + type, { 'is-disabled': disabled, 'is-loading': loading }
     ]"
   >
-    <i :class="['iconfont','icon-'+icon]" v-if="icon && !loading" :style="iconStyles"></i>
+    <i :class="['znv-iconfont','icon-'+icon]" v-if="icon && !loading" :style="iconStyles"></i>
     <span v-if="$slots.default" :style="textStyle"><slot></slot></span>
   </button>
 </template>

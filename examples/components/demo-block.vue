@@ -34,7 +34,7 @@
         return `demo-${this.$router.currentRoute.path.split('/').pop()}`
       },
       iconClass() {
-        return this.isExpanded ? 'iconfont icon-md-arrow-dropup' : 'iconfont icon-md-arrow-dropdown'
+        return this.isExpanded ? 'znv-iconfont icon-md-arrow-dropup' : 'znv-iconfont icon-md-arrow-dropdown'
       },
       controlText() {
         return this.isExpanded ? '隐藏代码' : '显示代码'

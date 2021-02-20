@@ -62,7 +62,7 @@ function notice(type, options) {
     content = `
             <div class="${prefixCls}-custom-content ${prefixCls}-with-icon ${prefixCls}-with-${type} ${withDesc}">
                 <span class="${prefixCls}-icon ${prefixCls}-icon-${type}">
-                    <i class="iconfont icon-${iconType}"></i>
+                    <i class="znv-iconfont icon-${iconType}"></i>
                 </span>
                 <div class="${prefixCls}-title">${title}</div>
                 <div class="${prefixCls}-desc">${desc}</div>

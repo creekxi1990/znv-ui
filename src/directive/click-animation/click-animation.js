@@ -27,7 +27,7 @@ export default {
         getComputedStyle(node).getPropertyValue('border-color') ||
         getComputedStyle(node).getPropertyValue('background-color')
       if (node) {
-        node.style.position = 'relative'
+        // node.style.position = 'relative'
         let ripple = node.querySelector('.znv-click-animating-node')
         resetEffect(ripple)
         ripple = document.createElement('span')

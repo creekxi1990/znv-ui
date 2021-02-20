@@ -23,7 +23,7 @@
           @focus="focus"
           @blur="blur"
           @keydown.stop="keyDown"
-          @input="change"
+          @input="handleInput"
           @mouseup="preventDefault"
           @change="change"
           :readonly="readonly || !editable"
@@ -75,7 +75,7 @@
       },
       activeChange: {
         type: Boolean,
-        default: false
+        default: true
       },
       value: {
         type: Number,
@@ -128,7 +128,8 @@
         focused: false,
         upDisabled: false,
         downDisabled: false,
-        currentValue: this.value
+        currentValue: this.value,
+        userInput: null
       }
     },
     computed: {
@@ -155,7 +156,7 @@
         ]
       },
       innerUpClasses() {
-        return `${prefixCls}-handler-up-inner iconfont icon-ios-arrow-up`
+        return `${prefixCls}-handler-up-inner znv-iconfont icon-ios-arrow-up`
       },
       downClasses() {
         return [
@@ -167,7 +168,7 @@
         ]
       },
       innerDownClasses() {
-        return `${prefixCls}-handler-down-inner iconfont icon-ios-arrow-down`
+        return `${prefixCls}-handler-down-inner znv-iconfont icon-ios-arrow-down`
       },
       inputWrapClasses() {
         return `${prefixCls}-input-wrap`
@@ -181,6 +182,9 @@
         return this.precision ? this.currentValue.toFixed(this.precision) : this.currentValue
       },
       formatterValue() {
+        if (this.userInput !== null) {
+          return this.userInput
+        }
         if (this.formatter && this.precisionValue !== null) {
           return this.formatter(this.precisionValue)
         } else {
@@ -241,6 +245,9 @@
           val = addNum(val, -step)
         }
         this.setValue(val)
+        // this.$nextTick(() => {
+        //   this.$emit('on-blur')
+        // })
       },
       setValue(val) {
         // 如果 step 是小数，且没有设置 precision，是有问题的
@@ -255,12 +262,12 @@
           }
         }
 
-        this.$nextTick(() => {
-          this.currentValue = val
-          this.$emit('input', val)
-          this.$emit('on-change', val)
-          this.dispatch('ZnvFormItem', 'on-form-change', val)
-        })
+        // this.$nextTick(() => {
+        this.userInput = null
+        this.$emit('input', val)
+        this.$emit('on-change', val)
+        this.dispatch('ZnvFormItem', 'on-form-change', val)
+        // })
       },
       focus(event) {
         this.focused = true
@@ -286,7 +293,7 @@
       change(event) {
         let val = event.target.value.trim()
         // 需要格式化数据时
-        let needFormat = (event.type === 'input' && this.activeChange) || (event.type === 'change' && !this.activeChange)
+        let needFormat = this.activeChange || (event.type === 'change' && !this.activeChange)
         if (needFormat) {
           if (event.type === 'input' && !this.activeChange) return
           if (this.parser) {
@@ -309,6 +316,10 @@
             event.target.value = this.currentValue
           }
         }
+        this.userInput = null
+      },
+      handleInput(event) {
+        this.userInput = event.target.value
       },
       changeVal(val) {
         val = Number(val)

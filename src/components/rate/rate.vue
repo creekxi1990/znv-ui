@@ -18,13 +18,13 @@
       :key="key">
       <i
         :class="[classes[item - 1], { 'hover': hoverIndex === item }]"
-        class="znv-rate__icon iconfont"
+        class="znv-rate__icon znv-iconfont"
         :style="getIconStyle(item)">
         <i
           v-if="showDecimalIcon(item)"
           :class="decimalIconClass"
           :style="decimalStyle"
-          class="znv-rate__decimal iconfont">
+          class="znv-rate__decimal znv-iconfont">
         </i>
       </i>
     </span>

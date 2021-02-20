@@ -101,7 +101,7 @@
       },
       appendToBody: {
         type: Boolean,
-        default: false
+        default: true
       },
       className: {
         type: String
